@@ -1,3 +1,41 @@
+# true-artist-s3-next-google-maps
+
+# 🚀  🚀
+
+https://github.com/coding-to-music/true-artist-s3-next-google-maps
+
+From / By https://github.com/healer1064/TrueArtist-Frontend
+
+## Environment variables:
+
+```java
+module.exports = {
+  publicRuntimeConfig: {
+    GOOGLE_APP_ID: process.env.GOOGLE_APP_ID,
+    INSTAGRAM_APP_ID: process.env.INSTAGRAM_APP_ID,
+    PUBLIC_PAGE_BASE_URL: process.env.PUBLIC_PAGE_BASE_URL,
+    AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
+    AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
+    AWS_BUCKET: process.env.AWS_BUCKET,
+    AWS_REGION: process.env.AWS_REGION,
+    NEXT_PUBLIC_CDN_HOST: process.env.NEXT_PUBLIC_CDN_HOST,
+    NEXT_PUBLIC_RECAPTCHA_SITE_KEY: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+    ROLLBAR_CLIENT_TOKEN: process.env.ROLLBAR_CLIENT_TOKEN,
+  },
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/true-artist-s3-next-google-maps.git
+git push -u origin main
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

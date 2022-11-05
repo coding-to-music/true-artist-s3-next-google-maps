@@ -1,5 +1,5 @@
 {
-  "name": "true-artist",
+  "name": "true-artist-s3-next-google-maps",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "deploy": "git add . && git commit -m Build && git push",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix --max-warnings=0",
     "prettier": "prettier  \"**/*.+(js|ts|css|sass|less|graphql|scss|json)\"",
     "format": "npm run prettier -- --write",
