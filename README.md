@@ -1,6 +1,6 @@
 # true-artist-s3-next-google-maps
 
-# 🚀  🚀
+# 🚀 true artist s3 next google maps 🚀
 
 https://github.com/coding-to-music/true-artist-s3-next-google-maps
 
