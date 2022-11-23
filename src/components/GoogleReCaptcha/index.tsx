@@ -38,6 +38,8 @@ export default function GoogleReCaptcha({ setIsHuman }: { setIsHuman: React.Disp
   const classes = useStyles();
   const recaptchaSiteKey = getConfig().publicRuntimeConfig.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
+  console.log("src/components/GoogleReCaptcha: recaptchaSiteKey ", recaptchaSiteKey);
+
   const [msg, setMsg] = useState({ status: false, message: "" });
 
   const v2Callback: TReCaptchaV2Callback = (token: string | false | Error): void => {
