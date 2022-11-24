@@ -72,3 +72,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Runtime errors
+
+```
+Material-UI: the createMuiTheme function was renamed to createTheme.
+
+You should use `import { createTheme } from '@material-ui/core/styles'`
+Warning: Failed prop type: The prop `justify` of `ForwardRef(Grid)` is deprecated. Use `justifyContent` instead, the prop was renamed.
+    at Grid (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+    at WithStyles (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+    at Loading (webpack-internal:///./src/components/Loading.tsx:35:3)
+    at AuthContext (webpack-internal:///./src/contexts/auth.tsx:52:3)
+    at AppContext (webpack-internal:///./src/contexts/app.tsx:18:3)
+    at ThemeProvider (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/@material-ui/styles/ThemeProvider/ThemeProvider.js:48:24)
+    at QueryClientProvider (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/react-query/lib/react/QueryClientProvider.js:45:21)
+    at MyApp (webpack-internal:///./src/pages/_app.tsx:49:5)
+    at StylesProvider (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/@material-ui/styles/StylesProvider/StylesProvider.js:57:24)
+    at AppContainer (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/next/dist/next-server/server/render.js:25:874)
+```
+
+And in the browser console
+
+https://www.chromium.org/developers/design-documents/create-amazing-password-forms/
+
+```
+more messages
+```
+
+### Use autocomplete attributes
+
+- Autocomplete attributes help password managers to infer the purpose of a field in a form, saving them from accidentally saving or autofilling the wrong data. A little annotation can go a long way: some common values for text fields are “username”, “current-password” (login forms and change password forms) and “new-password” (registration and change password forms). See a detailed write-up with examples.
