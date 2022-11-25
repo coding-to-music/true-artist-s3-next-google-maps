@@ -160,7 +160,7 @@ export default function Footer() {
           <FooterItem name={"Useful links"} data={footerItems.usefulLinks} />
         </Grid>
         <Grid item lg={2} md={2} sm={6} xs={6} className={classes.gridItem}>
-          <FooterItem name={"True Artists"} data={footerItems.trueArtists} />
+          <FooterItem name={"Your Brand Here"} data={footerItems.trueArtists} />
         </Grid>
         <Grid item lg={2} md={2} sm={6} xs={6} className={classes.gridItem}>
           <FooterItem name={"Legal"} data={footerItems.legal} />
