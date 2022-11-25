@@ -8,7 +8,7 @@ import clsx from "clsx";
 import Link from "next/link";
 
 // Google recaptcha component
-import GoogleReCaptcha from "src/components/GoogleReCaptcha";
+// import GoogleReCaptcha from "src/components/GoogleReCaptcha";
 
 // Material UI Components
 import Container from "@material-ui/core/Container";
@@ -137,7 +137,7 @@ export default function Register() {
               errors={errors.email}
             />
 
-            <GoogleReCaptcha setIsHuman={setIsHuman} />
+            {/* <GoogleReCaptcha setIsHuman={setIsHuman} /> */}
 
             <PrimaryButton
               className={classes.resetPasswordButton}

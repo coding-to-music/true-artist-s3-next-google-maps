@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
 
 // Google recaptcha component
-import GoogleReCaptcha from "src/components/GoogleReCaptcha";
+// import GoogleReCaptcha from "src/components/GoogleReCaptcha";
 
 // Material UI Components
 import Container from "@material-ui/core/Container";
@@ -267,7 +267,7 @@ export default function Login() {
               type={"password"}
             />
 
-            <GoogleReCaptcha setIsHuman={setIsHuman} />
+            {/* <GoogleReCaptcha setIsHuman={setIsHuman} /> */}
 
             <PrimaryButton
               className={classes.signUpButton}

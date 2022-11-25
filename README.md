@@ -1,5 +1,7 @@
 # true-artist-s3-next-google-maps
 
+Looks interesting but could not get it to work. ReCaptcha error. So could not get to AWS stuff.
+
 # 🚀 true artist s3 next google maps 🚀
 
 https://github.com/coding-to-music/true-artist-s3-next-google-maps

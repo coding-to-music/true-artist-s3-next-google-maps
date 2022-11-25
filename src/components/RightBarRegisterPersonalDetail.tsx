@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 
 // Google recaptcha component
-import GoogleReCaptcha from "src/components/GoogleReCaptcha";
+// import GoogleReCaptcha from "src/components/GoogleReCaptcha";
 
 // Material UI Components
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
@@ -232,7 +232,7 @@ export default function RightBarRegisterPersonalDetail({
             errors={errors.confirmPassword}
           />
 
-          <GoogleReCaptcha setIsHuman={setIsHuman} />
+          {/* <GoogleReCaptcha setIsHuman={setIsHuman} /> */}
 
           <Grid container spacing={2} className={classes.buttonWrapper}>
             <Grid item lg={6} md={6} sm={12} xs={12}>
