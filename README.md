@@ -90,6 +90,7 @@ Warning: Failed prop type: The prop `justify` of `ForwardRef(Grid)` is deprecate
     at MyApp (webpack-internal:///./src/pages/_app.tsx:49:5)
     at StylesProvider (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/@material-ui/styles/StylesProvider/StylesProvider.js:57:24)
     at AppContainer (/mnt/volume_nyc1_01/true-artist-s3-next-google-maps/node_modules/next/dist/next-server/server/render.js:25:874)
+
 ```
 
 And in the browser console
