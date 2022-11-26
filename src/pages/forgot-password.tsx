@@ -72,7 +72,7 @@ const useStyles = makeStyles({
 
 export default function Register() {
   const app = useApp();
-  const [isHuman, setIsHuman] = useState(false);
+  const [isHuman, setIsHuman] = useState(true);
 
   // Validation schema
   const validationSchema = useMemo(

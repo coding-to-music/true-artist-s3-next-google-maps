@@ -140,7 +140,7 @@ export default function Register() {
   const resolver = useYupValidationResolver(validationSchema);
   const { control, handleSubmit, errors } = useForm({ resolver });
   const [ref, setRef] = useState();
-  const [isHuman, setIsHuman] = useState(false);
+  const [isHuman, setIsHuman] = useState(true);
 
   // On submit form
   const onSubmit = async (data: Register.FormData) => {

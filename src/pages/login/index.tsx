@@ -140,7 +140,7 @@ export default function Login() {
   const classes = useStyles();
   const resolver = useYupValidationResolver(validationSchema);
   const { control, handleSubmit, errors } = useForm({ resolver });
-  const [isHuman, setIsHuman] = useState(false);
+  const [isHuman, setIsHuman] = useState(true);
 
   // Submit normal login, by email and password
   const onSubmit = async (data: Login.FormData) => {

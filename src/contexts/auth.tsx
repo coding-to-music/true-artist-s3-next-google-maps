@@ -82,9 +82,9 @@ export function AuthContext({ children }: Props) {
 
       return response;
     } catch (error) {
-      app.showErrorDialog(true, "Error occured while processing your request. Please try again.");
+      app.showErrorDialog(true, "Error occured while processing your request. Please try again. Error 106");
       // Unknown issue or code issues
-      return { error: true, data: null, errors: "Error occured while processing your request. Please try again." };
+      return { error: true, data: null, errors: "Error occured while processing your request. Please try again. Error 107" };
     }
   }
 
@@ -113,7 +113,7 @@ export function AuthContext({ children }: Props) {
           router.replace("/login");
         });
     } catch (error) {
-      app.showErrorDialog(true, "Error occured while processing your request. Please try again.");
+      app.showErrorDialog(true, "Error occured while processing your request. Please try again. Error 108");
     }
   }
 
@@ -147,18 +147,21 @@ export function AuthContext({ children }: Props) {
 
       return response;
     } catch (error) {
-      app.showErrorDialog(true, "Error occured while processing your request. Please try again.");
+      app.showErrorDialog(true, "Error occured while processing your request. Please try again. Error 109");
       // Unknown issue or code issues
-      return { error: true, data: null, errors: "Error occured while processing your request. Please try again." };
+      return { error: true, data: null, errors: "Error occured while processing your request. Please try again. Error 110" };
     }
   }
 
   // Normal register: by email and password
   async function register(payload: Register.ApiPayload) {
     try {
+      console.log('auth await registerUser(payload): XXXXXXXXXX 1111');
       const response = await registerUser(payload);
+      console.log('auth await registerUser(payload): XXXXXXXXXX 2222');
 
       const { error, data, errors } = response;
+      console.log('auth await registerUser(payload): XXXXXXXXXX 3333');
       // No error happens
       if (!error) {
         localStorage.setItem(TOKEN_KEY, data.auth_token);
@@ -172,14 +175,14 @@ export function AuthContext({ children }: Props) {
         // Navigate to register selection page
         router.push("/dashboard");
       } else {
-        app.showErrorDialog(true, errors ? errors.toString() : "We are not to complete your registration. Try again");
+        app.showErrorDialog(true, errors ? errors.toString() : "We are not to complete your registration. Try again. Error 111");
       }
 
       return response;
     } catch (error) {
-      app.showErrorDialog(true, "Error occured while processing your request. Please try again.");
+      app.showErrorDialog(true, "Error occured while processing your request. Please try again. Error 112");
       // Unknown issue or code issues
-      return { error: true, data: null, errors: "Error occured while processing your request. Please try again." };
+      return { error: true, data: null, errors: "Error occured while processing your request. Please try again. Error 113" };
     }
   }
 
@@ -202,14 +205,14 @@ export function AuthContext({ children }: Props) {
         // Navigate to register selection page
         router.push("/dashboard");
       } else {
-        app.showErrorDialog(true, errors ? errors.toString() : "We are not to complete your registration. Try again");
+        app.showErrorDialog(true, errors ? errors.toString() : "We are not to complete your registration. Try again. Error 114");
       }
 
       return response;
     } catch (error) {
-      app.showErrorDialog(true, "Error occured while processing your request. Please try again.");
+      app.showErrorDialog(true, "Error occured while processing your request. Please try again. Error 115");
       // Unknown issue or code issues
-      return { error: true, data: null, errors: "Error occured while processing your request. Please try again." };
+      return { error: true, data: null, errors: "Error occured while processing your request. Please try again. Error 116" };
     }
   }
 
