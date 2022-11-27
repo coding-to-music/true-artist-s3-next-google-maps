@@ -1,6 +1,6 @@
 # true-artist-s3-next-google-maps
 
-Looks interesting but could not get it to work. ReCaptcha error. So could not get to AWS stuff.
+Looks interesting but could not get it to work. ReCaptcha error commented out, can't get Google Auth to work. So could not get to AWS stuff.
 
 # 🚀 true artist s3 next google maps 🚀
 
