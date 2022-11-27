@@ -100,7 +100,8 @@ export default function RightBarRegisterPersonalDetail({
   const classes = useStyles();
   const resolver = useYupValidationResolver(validationSchema);
   const { control, handleSubmit, errors } = useForm({ resolver });
-  const [isHuman, setIsHuman] = useState(true);
+  const [isHuman] = useState(true);
+  // const [isHuman, setIsHuman] = useState(true);
 
   const onSubmit = async ({ firstName, lastName, email, password, confirmPassword }: SubmitFormData) => {
     // Call APIs to submit register data
